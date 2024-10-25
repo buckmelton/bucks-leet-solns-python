@@ -35,3 +35,16 @@
 # 	If new current altitude is greater than max altitude
 # 		Set max altitude to current altitude
 # Return max altitude
+
+class Solution(object):
+    def largestAltitude(self, gain):
+        """
+        :type gain: List[int]
+        :rtype: int
+        """
+        maxAltitude = 0
+        curAltitude = 0
+        for g in gain:
+        	curAltitude += g
+        	maxAltitude = max(curAltitude, maxAltitude)
+        return maxAltitude
