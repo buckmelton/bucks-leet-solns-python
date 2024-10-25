@@ -23,3 +23,15 @@
 # n == gain.length
 # 1 <= n <= 100
 # -100 <= gain[i] <= 100
+
+# Buck's Observations:
+# This is specified as a "prefix sum" problem.
+# The solution seems straightforward:
+# 
+# Initialize current altitude to 0
+# Initialize max altitude to 0
+# For each gain in gain array
+# 	Add gain to current altitude
+# 	If new current altitude is greater than max altitude
+# 		Set max altitude to current altitude
+# Return max altitude
